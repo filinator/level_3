@@ -1,0 +1,51 @@
+.reviews {
+    width: 100%;
+    margin-top: 105px;
+    padding: 0 20px 64px;
+
+    @media (max-width: $screen-laptop) {
+        margin-top: 100px;
+        padding: 0 17px 47px;
+    }
+
+    @media (max-width: $screen-sm-max) {
+        cursor: pointer;
+    } 
+
+    @media (max-width: $screen-sm-min) {
+        margin-top: 40px;
+    } 
+
+    &__container {
+        max-width: 1170px;
+        margin: 0 auto;
+    }
+
+    &__desc-title {
+        @media (max-width: $screen-sm-min) {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 25px;
+        } 
+    }
+    
+    &__divider{
+        @media (max-width: $screen-sm-min) {
+            margin-bottom: 25px;
+        } 
+    }
+
+    &__desc-subtitle {
+        margin-bottom: 80px;
+
+        @media (max-width: $screen-laptop) {
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: $screen-sm-min) {
+            font-size: 14px;
+            line-height: 16px;
+            padding: 0 5px;
+        } 
+    }
+}

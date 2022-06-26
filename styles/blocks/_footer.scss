@@ -1,0 +1,61 @@
+.footer {
+    background-color: $main_black_dark;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 0 27px;
+
+    &__links {
+        margin-bottom: 27px;
+    }
+
+    &__copyright {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: $main_grey_transparent;
+
+        @media (max-width: $screen-laptop) {
+            font-size: 14px;
+            line-height: 16px;
+         }
+    }
+}
+
+.facebook_footer,
+.twitter_footer,
+.linkedin_footer,
+.pinterest_footer,
+.instagram_footer,
+.github_footer,
+.rss_footer {
+    width: 53px;
+    height: 53px;
+    fill: $main_link;
+    transition: all 0.3s;
+    
+    @media (max-width: $screen-laptop) {
+        width: 45px;
+        height: 45px;
+        margin-right: 20px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+        width: 35px;
+        height: 35px;
+    }
+    
+    @media (max-width: $screen-sm-min-small) {
+        width: 26px;
+        height: 26px;
+        margin-right: 10px;
+    }
+}
+
+.logo__links:hover {
+fill: $main_coral;
+}

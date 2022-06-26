@@ -1,0 +1,52 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: $main_coral;
+    padding: 1em 5em;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Open Sans', sans-serif;
+    color: $main_white;
+    transition: border 0.3s, color 0.3s;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    &.btn--info {
+        background: none;
+        border: 2px solid $main_white;
+
+        @media (max-width: $screen-md-min) {
+            width: 288px;
+        }
+
+        &:hover {
+            cursor: pointer;
+            border: 2px solid $main_coral;
+            color: $main_coral;
+        }
+
+        &:active {
+            background-color: $main_coral_dark;
+            border: 2px solid $main_coral_dark;
+            color: $main_white;
+        }
+
+        @media (max-width: $screen-laptop) {
+            padding: 0.9em 3em;
+        }
+
+        @media (max-width: $screen-md-min) {
+            padding: 0.9em 5em;
+        }
+    }
+}

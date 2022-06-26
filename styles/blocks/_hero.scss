@@ -1,0 +1,112 @@
+.hero {
+    padding: 200px 20px 180px 120px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/img/hero_bg.jpg") center/cover no-repeat;
+
+    @media (max-width: $screen-xl-min) {
+        padding: 130px 20px 90px 10%;
+    }
+
+    @media (max-width: $screen-md-min) {
+        padding: 80px 10% 80px 10%;
+    }
+
+    @media (max-width: $screen-sm-min-small) {
+        padding: 80px 9px 80px 9px;
+    }
+
+    .container {
+        transition: 1s;
+    }
+
+    .container.active {
+        position: relative;
+        z-index: -5;
+        opacity: 0;
+        transition: all 0.3s;
+    } 
+    
+   
+
+    &__content {
+        display: flex;
+        align-items: flex-start;
+        gap: 60px;
+
+        @media (max-width: $screen-lg-min) {
+            gap: 56px;
+        }
+
+        @media (max-width: $screen-md-min) {
+            flex-direction: column;
+            align-items: stretch;
+        }
+    }
+
+    &__info {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 50px;
+
+        > .logo {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: $screen-laptop) {
+            row-gap: 40px;
+
+            > .logo {
+                margin-bottom: 0;
+            }
+        }
+
+        @media (max-width: $screen-md-min) {
+            row-gap: 35px;
+            text-align: center;
+            align-items: center;
+        }
+    }
+
+    &__title {
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 56px;
+        text-transform: uppercase;
+        color: $main_white;
+        font-family: 'Raleway', sans-serif;
+
+        @media (max-width: $screen-xl-min) {
+            font-size: 38px;
+            line-height: 42px;
+        }
+        @media (max-width: $screen-lg-min) {
+            font-size: 38px;
+            line-height: 42px;
+        }
+    }
+
+    &__divider {
+        width: 170px;
+    }
+
+    &__description {
+        max-width: 270px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $main_white;
+        font-family: 'Raleway', sans-serif;
+
+        @media (max-width: $screen-laptop) {
+            max-width: 100%;
+            font-size: 14px;
+        }
+    }
+}
+
+.hero.active {
+    background: $main_black_dark;
+    max-height: 574px;
+}

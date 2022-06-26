@@ -1,0 +1,85 @@
+.logo {
+    width: 88px;
+    height: 32px;
+}
+
+.logo--small {
+    width: 65px;
+    height: 23px;
+}
+
+.logo--big {
+    width: 160px;
+    height: 55px;
+
+    @media (max-width: $screen-md-min) {
+        display: none;
+    }
+}
+
+.logo__links {
+    width: 70px;
+    height: 70px; 
+    margin-right: 30px;
+    cursor: pointer;
+
+    @media (max-width: $screen-xl-min) {
+            width: 64px;
+            height: 64px; 
+            margin-right: 12px;
+            }
+
+    @media (max-width: $screen-sm-min) {
+            width: 40px;
+            height: 40px;
+            }
+
+    @media (max-width: $screen-sm-min-small) {
+            width: 26px;
+            height: 26px;
+            }
+}
+
+.logo__link {
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.logo__links:hover {
+    stroke: $main_coral;
+}
+
+.logo__rss { 
+    margin: 0;
+}
+
+.card_icon {
+    width: 170px;
+    height: 170px;
+    
+    @media (max-width: $screen-laptop) {
+        width: 147px;
+        height: 147px;
+     }
+}
+
+.facebook_footer,
+.twitter_footer,
+.linkedin_footer,
+.pinterest_footer,
+.instagram_footer,
+.github_footer,
+.rss_footer {
+    width: 53px;
+    height: 53px;
+    margin-right: 32px; 
+}
+
+@media (max-width: $screen-xl-min) {
+    
+    .logo__link {
+        width: 24px;
+        height: 24px; 
+    }
+}

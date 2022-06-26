@@ -1,0 +1,70 @@
+.banner {
+    padding: 105px 0 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("../../assets/img/city_bg.jpg") center/cover no-repeat;
+
+    @media (max-width: $screen-laptop) {
+        padding: 100px 20px 50px;
+    }
+
+    @media (max-width: $screen-sm-min) {
+        padding: 50px 20px 50px;
+    } 
+
+    &_container {
+        max-width: 1170px;
+            margin: 0 auto;
+    }
+
+    &__desc-title {
+        color: $main_white;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 45px;
+        } 
+    }
+
+    &__divider {
+        background-color: $main_white;
+        margin-bottom: 15px;
+    }
+
+    &__desc-subtitle {
+        color: $main_white;
+        text-align: center;
+
+        @media (max-width: $screen-sm-min) {
+            font-size: 14px;
+            line-height: 16px;
+        } 
+    }
+
+    &_container-btn {
+        background: none;
+        border: 2px solid $main_white;
+        width: 370px;
+        height: 58px;
+        margin: 0 auto;
+
+        @media (max-width: $screen-laptop) {
+            width: 318px;
+        }
+
+        @media (max-width: $screen-sm-min-small) {
+            width: 280px;
+         }
+    }
+
+    &_container-btn:hover {
+        border: 2px solid $main_coral;
+        color: $main_coral;
+    }
+
+    &_container-btn:active {
+        background-color: $main_coral_dark;
+        border: 2px solid $main_coral_dark;
+        color: $main_white;
+    }
+}

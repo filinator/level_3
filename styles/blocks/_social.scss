@@ -1,0 +1,86 @@
+.social {
+    height: 140px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: $main_purple_light;
+    margin-bottom: 99px;
+    padding: 0 20px;
+
+    @media (max-width: $screen-xl-min) {
+        gap: 20px;
+    }
+
+    @media (max-width: $screen-laptop) {
+        margin-bottom: 50px;
+     }
+
+     @media (max-width: $screen-laptop-small) {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 15px;
+     }
+
+    &__info {
+        max-width: 470px;
+
+        @media (max-width: $screen-xl-min) {
+            max-width: 402px;
+        }
+
+        @media (max-width: $screen-laptop-small) {
+            padding: 30px;
+            max-width: 700px;
+            display: flex;
+            flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        }
+
+        @media (max-width: $screen-sm-min) {
+            padding: 30px 0 0;
+        }
+    }
+
+    &__info-title {
+        font-family: 'Open Sans';
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        text-transform: capitalize;
+        color: $main_grey_dark;
+        margin-bottom: 30px;
+
+        @media (max-width: $screen-laptop) {
+            font-size: 18px;
+            line-height: 25px;
+        }
+    }
+
+    &__info-desc {
+        font-family: 'Raleway';
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $main_grey_light;
+
+        @media (max-width: $screen-laptop) {
+            font-size: 14px;
+            line-height: 16px;
+        }     
+        
+        @media (max-width: $screen-sm-max) {
+            text-align: center;
+        }
+        
+        @media (max-width: $screen-sm-min) {
+            padding: 0 10px;
+        }
+    }
+}
+
+.tabs__image {
+    object-fit: cover;
+}

@@ -1,0 +1,35 @@
+.pricing {
+    width: 100%;
+    background-color: $main_sky;
+    padding: 0 16px 50px;
+
+    @media (max-width: $screen-sm-min) {
+        padding: 0 16px 16px;
+    }
+
+    &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    }
+
+    &__desc-title {
+        margin-top: 105px;
+
+        @media (max-width: $screen-laptop) {
+            margin-top: 105px;
+        }
+
+        @media (max-width: $screen-sm-min) {
+            margin-top: 50px;
+            font-size: 24px;
+            line-height: 28px;
+        } 
+    }
+
+    &__desc-subtitle {
+        @media (max-width: $screen-sm-min) {
+            font-size: 14px;
+            line-height: 16px;
+        } 
+    }
+}
